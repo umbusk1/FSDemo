@@ -4,42 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formación Smart - Demo</title>
-    
     <style>
-        /* Elimina márgenes del navegador */
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        
-        /* Contenedor de la imagen */
-        .imagen-fondo {
-            width: 100%;
-            height: 100vh; /* Ocupa toda la altura de la ventana */
-            position: relative;
-        }
-        
-        /* La imagen se ajusta a toda la pantalla */
-        .imagen-fondo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Mantiene las proporciones de la imagen */
-        }
+        body { margin: 0; padding: 0; overflow: hidden; }
+        .imagen-fondo { width: 100%; height: 100vh; position: relative; }
+        .imagen-fondo img { width: 100%; height: 100%; object-fit: cover; }
     </style>
 </head>
 <body>
-    <!-- Contenedor principal con la imagen -->
     <div class="imagen-fondo">
         <img src="FS_Home.png" alt="Formación Smart">
     </div>
-    
+
     <!-- ========================================= -->
-    <!-- CHATBOX -->
+    <!-- CHATBOX SIN AUTENTICACIÓN -->
     <!-- ========================================= -->
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="5VnwR7mGOh_GmpZWBG4nA";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
-    
+    <!-- Solo necesitas este script, reemplaza TU_CHATBASE_ID por el ID de tu bot -->
+    <script src="https://www.chatbase.co/embed.min.js" id="5VnwR7mGOh_GmpZWBG4nA"></script>
 </body>
 </html>
